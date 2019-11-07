@@ -1,0 +1,23 @@
+{
+    "mainAddress": "mongo:27017",
+    "verbosity": 3,
+    "logging": {
+      "type": "file",
+      "filename": "mongo-connector.log"
+    },
+    "namespaces": {
+      "include": ["enel_integrador_etl.pontos_medicao"],
+      "mapping": {
+          "enel_integrador_etl.pontos_medicao": "pontos_medicao._doc"
+        }
+    },
+    "docManagers": [
+      {
+        "docManager": "elastic2_doc_manager",
+        "targetURL": "elasticsearch:9200",
+        "__bulkSize": 1000,
+        "__uniqueKey": "_id",
+        "__autoCommitInterval": null
+      }
+    ]
+  }

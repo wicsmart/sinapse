@@ -1,0 +1,7 @@
+mongo-url = "mongodb://mongo:27017"
+
+elasticsearch-urls = ["http://elasticsearch:9200"]
+
+
+direct-read-namespaces = ["enel_integrador_etl.pontos_medicao"]
+
