@@ -12,7 +12,7 @@ RUN npm install
 
 WORKDIR /usr/src/app/maps
 
-COPY riomap.geojson .
+COPY municipios.geojson .
 
 COPY sucursal.geojson .
 

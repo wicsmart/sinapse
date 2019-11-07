@@ -9,7 +9,7 @@ map.regionmap:
   includeElasticMapsService: false
   layers:
      - name: "Rio de Janeiro"
-       url: "http://localhost:8000/municipios.geojson"
+       url: "http://localhost:8001/municipios.geojson"
        attribution: "https://github.com/tbrugz/geodata-br"
        fields:
           - name: "name"
