@@ -13,7 +13,7 @@ map.regionmap:
        attribution: "https://github.com/tbrugz/geodata-br"
        fields:
           - name: "name"
-            description: "Município"
+            description: "Municipio"
 
 server.cors: true
 server.cors.origin: ['*']

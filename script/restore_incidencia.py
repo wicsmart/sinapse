@@ -87,12 +87,15 @@ def gerar_bulk():
 def load_json(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".json"):
-            f = open("./backup/"+filename)
+            f = open(directory+"/"+filename)
             docket_content = f.read()
             body=json.loads(docket_content)
             print(helpers.bulk(es, body, index=INDEX_NAME, doc_type=DOC_TYPE))
 
 if __name__ == '__main__':
+    
+    path_backup = '/home/wictor/Downloads/backup_incidencias/backup'
+
     logging.basicConfig(level=logging.ERROR)
     es = connect_elasticsearch("127.0.0.1","9220")
-    load_json("./backup/")
+    load_json(path_backup)

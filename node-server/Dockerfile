@@ -18,7 +18,7 @@ COPY sucursal.geojson .
 
 RUN npm install http-server -g
 
-CMD [ "http-server", "--cors='kbn-7.1.0'", "-p", "8000" ]
+CMD [ "http-server", "--cors='kbn-version'", "-p", "8000" ]
 
 EXPOSE 8080 8000
 
