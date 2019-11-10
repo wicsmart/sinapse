@@ -12,6 +12,8 @@ map.regionmap:
        url: "http://localhost:8001/municipios.geojson"
        attribution: "https://github.com/tbrugz/geodata-br"
        fields:
+          - name: "sucursal"
+            description: "Sucursal"
           - name: "name"
             description: "Municipio"
 
