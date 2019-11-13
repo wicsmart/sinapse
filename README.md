@@ -21,3 +21,4 @@ Para subir os serviços do Elasticsearch e Kibana deve-se executar o docker-comp
  
  [Nohup](https://www.maketecheasier.com/nohup-and-uses/)
 
+Para utilizar visualização do tipo Region Map no Kibana, deve-se instalar a extensão **Allow CORS: Access-Control-Allow-Origin** para o [Chrome](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)  ou no [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/access-control-allow-origin/)
