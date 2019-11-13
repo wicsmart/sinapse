@@ -10,7 +10,7 @@ Para subir os serviços do Elasticsearch e Kibana deve-se executar o docker-comp
 
 - Comando para iniciar os containers
 
-`$ nohup docker-compose build &`
+`$ nohup docker-compose up &`
       
  Necessário instalar docker, docker-compose e nohup
  
