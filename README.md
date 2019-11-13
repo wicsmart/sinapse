@@ -23,3 +23,15 @@ Para subir os serviços do Elasticsearch e Kibana deve-se executar o docker-comp
 Para utilizar visualização do tipo Region Map no Kibana, deve-se instalar a extensão **Allow CORS: Access-Control-Allow-Origin** para o [Chrome](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)  ou no [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/access-control-allow-origin/)
 
 Após instalar a extensão Allow CORS, limpar o cache do navegador e recarregar a página.
+
+
+Ferramenta para trabalhar com git
+
+
+# Editor.md
+
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+
+(https://img.shields.io/bower/v/editor.md.svg)
