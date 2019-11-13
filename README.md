@@ -36,4 +36,4 @@ Após instalar a extensão Allow CORS, limpar o cache do navegador e recarregar 
 
 ###### Ferramenta para trabalhar com git
 
-[bash-git-prompt] https://github.com/magicmonty/bash-git-prompt
+[bash-git-prompt](https://github.com/magicmonty/bash-git-prompt)
