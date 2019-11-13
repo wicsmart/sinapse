@@ -25,6 +25,15 @@ Para utilizar visualização do tipo Region Map no Kibana, deve-se instalar a ex
 Após instalar a extensão Allow CORS, limpar o cache do navegador e recarregar a página.
 
 
-Ferramenta para trabalhar com git
 
-(https://img.shields.io/github/release/pandao/editor.md.svg)![https://github.com/magicmonty/bash-git-prompt]
+
+
+
+
+
+
+
+
+###### Ferramenta para trabalhar com git
+
+[bash-git-prompt] https://github.com/magicmonty/bash-git-prompt
