@@ -1,5 +1,7 @@
 #### Servidor ELK
 
+## Instruções para linux
+
 
 Para subir os serviços do Elasticsearch e Kibana deve-se executar o docker-compose na raiz deste projeto.
 - Comando para construir os containers
