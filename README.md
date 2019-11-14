@@ -25,8 +25,11 @@ Para utilizar visualização do tipo Region Map no Kibana, deve-se instalar a ex
 Após instalar a extensão Allow CORS, limpar o cache do navegador e recarregar a página.
 
 
+## Importar e exportar incidências
 
+O arquivo dump_incidencia.py busca todos os documentos do indície e escreve em arquivos .json.
 
+O arquivo restore_incidencia.py lê todos os arquivos .json no caminho "path_backup".
 
 
 
