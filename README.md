@@ -31,6 +31,7 @@ O arquivo dump_incidencia.py busca todos os documentos do indície e escreve em 
 
 O arquivo restore_incidencia.py lê todos os arquivos .json no caminho "path_backup".
 
+Após criar o índice no elasticsearch é necessário criar index pattern no Kibana [How to create a index pattern](https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html) para criar visualizaçoes.
 
 
 
