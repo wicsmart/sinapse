@@ -4,6 +4,7 @@ import json
 import time
 import logging
 import sys, os
+import mapping_incidencia
 
 INDEX_NAME, DOC_TYPE = 'geo_incidencia', '_doc'
 
@@ -36,53 +37,24 @@ def connect_elasticsearch(endereco, porta):
 
 def create_empty_index(es_object):
     created = False
-    settings = {
-        "settings": {
-            "number_of_shards": 1,
-            "number_of_replicas": 1
-        },
-        "mappings": {
-            "_doc": {
-                "properties": {
-                    "data_planejado": {
-                        "type":   "date",
-                        "format": "dd/MM/yyyy HH:mm:ss||dd/MM/yyyy||epoch_millis"
-                    },
-                    "data_conclusao": {
-                        "type":   "date",
-                        "format": "dd/MM/yyyy HH:mm:ss||dd/MM/yyyy||epoch_millis"
-                    },
-                    "data_previsao_ultimo_item": {
-                        "type":   "date",
-                        "format": "dd/MM/yyyy HH:mm:ss||dd/MM/yyyy||epoch_millis"
-                    }
-                }
-            }
-        }
-    }
     try:
+        print mapping_incidencia.mapping
         if not es_object.indices.exists(INDEX_NAME):
             es_object.indices.create(
-                index=INDEX_NAME, body=settings)
+                index=INDEX_NAME, body=mapping_incidencia.mapping)
             print('Created Index')
             created = True
         else:
             print es_object.indices.delete(index=INDEX_NAME) 
             
             print es_object.indices.create(
-                index=INDEX_NAME, body=settings)
+                index=INDEX_NAME, body=mapping_incidencia.mapping)
            
             created = True
     except Exception as ex:
         print(str(ex))
     finally:
         return created
-
-def gerar_bulk():
-    bulk = []
-    documento = {}
-    bulk.append(documento)
-    return bulk
 
 def load_json(directory):
     for filename in os.listdir(directory):
@@ -94,8 +66,12 @@ def load_json(directory):
 
 if __name__ == '__main__':
     
-    path_backup = '/home/wictor/Downloads/backup_incidencias/backup'
+    path_backup = '/home/wictor/Documentos/backup'
 
     logging.basicConfig(level=logging.ERROR)
+
     es = connect_elasticsearch("127.0.0.1","9220")
+
+    create_empty_index(es)
+
     load_json(path_backup)

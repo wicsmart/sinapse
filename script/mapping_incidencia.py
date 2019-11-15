@@ -1,5 +1,4 @@
-PUT incidencia
-{
+mapping = {
    "mappings": {
         "dynamic": "false",
         "properties": {

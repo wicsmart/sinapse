@@ -8,7 +8,7 @@ import sys, os
 host = "127.0.0.1"
 port = 9220
 timeout = 10000
-index = "incidencia"
+index = "geo_incidencia"
 doc_type = "_doc"
 size = 10000
 
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         count = count+1
         "Scrolling..."
         data = es.scroll(scroll_id=sid, scroll='2m')
-
+      
         # Process current batch of hits
         escrever_file(process_hits(data['hits']['hits']), count)
 
