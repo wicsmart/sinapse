@@ -59,6 +59,7 @@ def create_empty_index(es_object):
 def load_json(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".json"):
+            print filename
             f = open(directory+"/"+filename)
             docket_content = f.read()
             body=json.loads(docket_content)
